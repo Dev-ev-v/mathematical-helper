@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="mainTitle">Localizador de números primos</h1>
+    <p>Precisa procurar por números primos? Chegou ao lugar certo! Procure <span>quantos números quiser, usos ilimitados</span></p>
+    
+    <div id="painel"></div>
+    
+    <div id="inputPainel">
+      <input id="minNumber" type="number" placeholder="Mínimo">
+      <input id="maxNumber" type="number" placeholder="Máximo">
+      <p>MinNumber</p>
+      <p>MaxNumber</p>
+    </div>
+    
+    <button id="result">Result</button>
+
+    <script>
+      const painel = document.getElementById("painel");
+      const result = document.getElementById("result");
+      const minNumber = document.getElementById("minNumber");
+      const maxNumber = document.getElementById("maxNumber");
+
+      function getResult() {
+        const array = [];
+        const min = parseInt(minNumber.value, 10);
+        const max = parseInt(maxNumber.value, 10);
+
+        if (isNaN(min) || isNaN(max) || min < 2 || min > max) {
+          painel.textContent = "Por favor, insira valores válidos (mín ≥ 2 e mín ≤ máx).";
+          return;
+        }
+
+        for (let i = min; i <= max; i++) {
+          let isPrime = true;
+          for (let j = 2; j <= Math.sqrt(i); j++) {
+            if (i % j === 0) {
+              isPrime = false;
+              break;
+            }
+          }
+          if (isPrime) {
+            array.push(i);
+          }
+        }
+
+        painel.textContent = array.length
+          ? `Números primos encontrados: ${array.join(", ")}`
+          : "Nenhum número primo encontrado.";
+      }
+
+      result.addEventListener("click", getResult);
+    </script>
+  </body>
+</html>
