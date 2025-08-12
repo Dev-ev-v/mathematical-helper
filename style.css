@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+#mainTitle {
+  color: rgba(255, 255, 0, 0.5);
+  font-family: "Dancing Script";
+  }
+
+p {
+  font-family: Oswald, sans-serif
+  }
+
+span {
+  color: rgba(255, 0, 0, 0.9);
+    background-color: rgba(0, 255, 0, 0.8);
+  }
+
+#painel {
+width: 90vw;  
+height: 20vw;  
+background-color: tomato; 
+  white-space: wrap;
+  overflow-x: auto; /* Cria barra de rolagem */
+}
+
+#result {
+  color: white;
+  background-color: blue;
+  margin: 2vw;
+  width: 90vw;
+  height: 5vw;
+  font-family: Arimo, sans-serif;
+  }
+
+#inputPainel {
+  margin: 3vw;
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  }
+
+#inputPainel input {
+  background-color: rgba(255, 255, 0, 0.9);
+  color: rgba(20, 20, 20, 0.5);
+  height: 10vw;
+  width: 40vw;
+  }
+
+#inputPainel p {
+  font-family: Rubik, sans-serif;
+  color: rgba(0, 255, 255, 0.7);
+}
