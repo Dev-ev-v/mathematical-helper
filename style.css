@@ -53,3 +53,14 @@ background-color: tomato;
   font-family: Rubik, sans-serif;
   color: rgba(0, 255, 255, 0.7);
 }
+
+#seehere {
+color: rgba(255, 0, 0, 0.85);
+font-family: sans-serif;
+}
+
+#topicsBoard {
+background-color: rgba(0, 0, 0, 0.3); 
+display: flex;
+flex-flow: column wrap;
+}
