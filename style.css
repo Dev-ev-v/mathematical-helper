@@ -1,7 +1,6 @@
 body {
   display: flex;
   flex-flow: wrap column;
-  align-items: center;
   background-color: rgba(0, 0, 255, 0.8);
 }
 
@@ -15,8 +14,13 @@ span {
   }
 
 #mainTitle {
-  color: rgba(255, 255, 0, 0.5);
-  font-family: "Dancing Script";
+  color: rgba(255, 0, 30, 0.7);
+  font-family: "Mozilla Headline", sans-serif;
+}
+
+#mainPageTitle {
+color: rgba(255, 255, 0, 0.5);
+font-family: "Dancing Script", serif;
 }
 
 #painel {
