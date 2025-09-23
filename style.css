@@ -1,6 +1,5 @@
 body {
-  display: flex;
-  flex-flow: wrap column;
+  text-align: center;
   background-color: rgba(0, 0, 255, 0.8);
 }
 
@@ -12,6 +11,11 @@ span {
   color: rgba(255, 0, 0, 0.9);
     background-color: rgba(0, 255, 0, 0.8);
   }
+
+img {
+height: 60vw;
+  width: 60vw;
+}
 
 #mainTitle {
   color: rgba(255, 0, 30, 0.7);
