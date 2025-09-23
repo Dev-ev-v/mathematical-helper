@@ -65,7 +65,7 @@ display: flex;
 flex-flow: column wrap;
 }
 
-#flexBoard a{
+#topicsBoard a{
 font-family: "Space Mono", sans-serif;
 color: rgba(255, 255, 255, 0.5);
   background-color: rgba(0, 0, 255, 0.1);
