@@ -28,6 +28,9 @@ height: 60vw;
 #mainPageTitle {
 color: rgba(255, 255, 0, 0.5);
 font-family: "Dancing Script", serif;
+font-size: 200%;
+position: sticky;
+top: 240px;
 }
 
 #painel {
@@ -89,4 +92,5 @@ margin: 2vw;
 #imgContainer {
 display: grid;
 grid-template: 1fr / 1fr;
+align-items: center;
 }
