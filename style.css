@@ -92,7 +92,7 @@ background-color: rgba(0, 0, 0, 0.3);
 display: grid;
 gap: 2rem / 2rem;
 grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-width: 50rem;
+width: 40rem;
 }
 
 #topicsContainer a {
@@ -104,7 +104,7 @@ height: 10rem;
 font-size: 1.125rem;
 }
 
-#topicsContainer h3 {
+#topicsContainer h4 {
 grid-row: 1 / 4;
 }
 
