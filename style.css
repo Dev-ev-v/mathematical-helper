@@ -7,6 +7,7 @@ body {
   flex-flow: column wrap;
   align-items: center;
   background-color: rgba(0, 0, 255, 0.8);
+  transition: all 1.0 0.1;
 }
 
 p {
@@ -20,8 +21,8 @@ span {
   }
 
 img {
-height: 60rem;
-  width: 60rem;
+height: 40rem;
+  width: 40rem;
   margin: 2rem;
 }
 
@@ -105,4 +106,8 @@ grid-template: 1fr / 1fr;
 font-size: 1.5rem;
 color: rgba(255, 255, 0, 0.7);
 background-color: rgba(0, 0, 0, 0.2);
+}
+
+body:hover {
+
 }
