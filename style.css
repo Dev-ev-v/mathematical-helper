@@ -29,7 +29,6 @@ height: 60rem;
 color: rgba(255, 255, 0, 0.5);
 font-family: "Dancing Script", serif;
 font-size: 200%;
-position: sticky;
 }
 
 #painel {
@@ -93,6 +92,8 @@ display: grid;
 grid-template: 1fr / 1fr;
 }
 
-#imgContainer h2 {
+#imgContainer h3 {
 font-size: 200%;
+color: rgba(255, 255, 0, 0.7);
+background-color: rgba(0, 0, 0, 0.2);
 }
