@@ -17,6 +17,7 @@ span {
 img {
 height: 60vw;
   width: 60vw;
+  margin: 2vw;
 }
 
 #mainTitle {
@@ -27,8 +28,6 @@ height: 60vw;
 #mainPageTitle {
 color: rgba(255, 255, 0, 0.5);
 font-family: "Dancing Script", serif;
-width: 90vw;
-  height: 30vw;
 }
 
 #painel {
