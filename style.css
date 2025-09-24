@@ -86,7 +86,7 @@ height: 10vw;
 margin: 2vw;
 }
 
-imgContainer {
+#imgContainer {
 display: grid;
 grid-template: 1fr / 1fr;
 }
