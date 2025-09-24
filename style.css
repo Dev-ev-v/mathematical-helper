@@ -74,6 +74,7 @@ font-family: "Merriweather", sans-serif;
 background-color: rgba(0, 0, 0, 0.3); 
 display: flex;
 flex-flow: column wrap;
+width: 50vw;
 }
 
 #topicsBoard a{
