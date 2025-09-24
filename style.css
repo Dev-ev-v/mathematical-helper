@@ -1,5 +1,7 @@
 body {
-  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   background-color: rgba(0, 0, 255, 0.8);
 }
 
