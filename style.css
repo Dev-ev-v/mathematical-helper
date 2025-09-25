@@ -1,6 +1,5 @@
 * {
 margin: 2rem;
-padding: 2rem;
 }
 
 body {
@@ -47,7 +46,7 @@ font-size: 2.5rem;
 }
 
 #painel {
-width: 90rem;  
+width: 60rem;  
 height: 20rem;  
 background-color: tomato; 
   white-space: wrap;
@@ -58,7 +57,7 @@ background-color: tomato;
   color: white;
   background-color: blue;
   margin: 2rem;
-  width: 90rem;
+  width: 60rem;
   height: 5rem;
   font-family: Arimo, sans-serif;
   font-size: 1.4rem;
@@ -73,8 +72,6 @@ background-color: tomato;
 #inputPainel input {
   background-color: rgba(255, 255, 0, 0.9);
   color: rgba(20, 20, 20, 0.5);
-  height: 10rem;
-  width: 40rem;
   }
 
 #inputPainel p {
