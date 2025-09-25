@@ -32,13 +32,13 @@ font-size: 1.5rem;
 #mainTitle {
   color: rgba(255, 0, 30, 0.7);
   font-family: "Mozilla Headline", sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
 }
 
 #mainPageTitle {
 color: rgba(255, 255, 0, 0.5);
 font-family: "Dancing Script", serif;
-font-size: 2.5rem;
+font-size: 3.5rem;
 }
 
 #painel {
@@ -63,7 +63,7 @@ background-color: tomato;
 #inputPainel {
   margin: 2rem;
   display: grid;
-  grid-template: 1fr 1fr;
+  grid-template: 1fr 1fr / 1fr;
   width: 60rem;
   gap: 2rem / 2rem;
   }
@@ -91,7 +91,7 @@ background-color: rgba(0, 0, 0, 0.3);
 display: grid;
 gap: 2rem / 2rem;
 grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-width: 40rem;
+width: 100rem;
 }
 
 #topicsContainer a {
