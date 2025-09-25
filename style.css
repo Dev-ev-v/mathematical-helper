@@ -22,11 +22,11 @@ height: 40rem;
 }
 
 h2 {
-font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 h3 {
-font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
 }
 
 #mainTitle {
@@ -38,7 +38,7 @@ font-size: 1.5rem;
 #mainPageTitle {
 color: rgba(255, 255, 0, 0.5);
 font-family: "Dancing Script", serif;
-font-size: 3.5rem;
+font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
 #painel {
@@ -89,7 +89,7 @@ font-family: "Merriweather", sans-serif;
 #topicsContainer {
 background-color: rgba(0, 0, 0, 0.3); 
 display: grid;
-gap: 2rem / 2rem;
+gap: 2rem;
 grid-template: repeat(4, 1fr) / repeat(3, 1fr);
 width: 100rem;
 }
@@ -103,7 +103,7 @@ height: 10rem;
 font-size: 1.125rem;
 }
 
-#topicsContainer h4 {
+#topicsContainer h3 {
 grid-row: 1 / 4;
 }
 
