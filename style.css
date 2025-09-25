@@ -47,6 +47,7 @@ height: 20rem;
 background-color: tomato; 
   white-space: wrap;
   overflow-x: auto; /* Cria barra de rolagem */
+  margin: 2rem;
 }
 
 #result {
@@ -60,7 +61,7 @@ background-color: tomato;
   }
 
 #inputPainel {
-  margin: 3rem;
+  margin: 2rem;
   display: grid;
   grid-template: 1fr 1fr;
   width: 60rem;
@@ -70,7 +71,7 @@ background-color: tomato;
 #inputPainel input {
   background-color: rgba(255, 255, 0, 0.9);
   color: rgba(20, 20, 20, 0.5);
-  width: 25rem;
+  width: 45em;
   height: 15rem;
   }
 
