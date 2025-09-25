@@ -1,7 +1,3 @@
-* {
-margin: 2rem;
-}
-
 body {
   display: flex;
   flex-flow: column wrap;
@@ -66,12 +62,16 @@ background-color: tomato;
 #inputPainel {
   margin: 3rem;
   display: grid;
-  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template: 1fr 1fr;
+  width: 60rem;
+  gap: 2rem / 2rem;
   }
 
 #inputPainel input {
   background-color: rgba(255, 255, 0, 0.9);
   color: rgba(20, 20, 20, 0.5);
+  width: 25rem;
+  height: 15rem;
   }
 
 #inputPainel p {
