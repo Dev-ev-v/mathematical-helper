@@ -1,86 +1,127 @@
-body {
-  text-align: center;
-  background-color: rgba(0, 0, 255, 0.8);
+/* ---------- RESET BÁSICO ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p {
-  font-family: Oswald, sans-serif;
-  }
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ---------- TIPOGRAFIA ---------- */
+h1, h2, h3, h4 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: #003366;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #004488;
+}
+
+h3, h4 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #333;
+}
 
 span {
-  color: rgba(255, 0, 0, 0.9);
-    background-color: rgba(0, 255, 0, 0.8);
-  }
-
-#mainTitle {
-  color: rgba(255, 0, 30, 0.7);
-  font-family: "Mozilla Headline", sans-serif;
+  color: #d40000;
+  font-weight: bold;
 }
 
-#mainPageTitle {
-color: rgba(255, 255, 0, 0.5);
-font-family: "Dancing Script", serif;
+/* ---------- HEADER ---------- */
+header {
+  margin: 2rem 0;
 }
 
-#painel {
-width: 60rem;  
-height: 20rem;  
-background-color: tomato; 
-  white-space: wrap;
-  overflow-x: auto; /* Cria barra de rolagem */
-  margin: 2rem;
+header h3 {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-#result {
-  color: white;
-  background-color: blue;
-  font-family: Arimo, sans-serif;
-  }
-
-#inputPainel {
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+#imgContainer {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  gap: 2rem 2rem;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  align-items: start;
+  justify-items: center;
+  margin: 2rem 0;
+}
 
-#inputPainel input {
-  background-color: rgba(255, 255, 0, 0.9);
-  color: rgba(20, 20, 20, 0.5);
-  width: 45em;
-  height: 15rem;
-  }
+#imgContainer figure {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  max-width: 350px;
+}
 
-#inputPainel p {
-  font-family: Rubik, sans-serif;
-  color: rgba(0, 255, 255, 0.7);
+#imgContainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+#imgContainer figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ---------- RODAPÉ ---------- */
+footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: #003366;
+  color: white;
+  border-radius: 10px;
 }
 
 #seehere {
-color: rgba(255, 0, 0, 0.85);
-font-family: "Merriweather", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #ffdd00;
 }
 
 #topicsContainer {
-background-color: rgba(0, 0, 0, 0.3); 
-display: grid;
-gap: 2rem 2rem;
-grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #topicsContainer a {
-font-family: "Space Mono", sans-serif;
-color: rgba(255, 255, 255, 0.5);
-background-color: rgba(0, 0, 255, 0.1);
+  display: block;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
-#imgContainer {
-display: grid;
-grid-template: 1fr / repeat(8, 1fr);
+#topicsContainer a:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
-#imgContainer h3 {
-color: rgba(255, 255, 0, 0.7);
-background-color: rgba(0, 0, 0, 0.2);
+/* ---------- COPYRIGHT ---------- */
+footer h3 {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #ccc;
 }
-
