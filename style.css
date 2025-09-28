@@ -1,12 +1,10 @@
 body {
-  display: grid;
-  grid-template: repeat(10, 1fr) / repeat(10, 1fr)
+  text-align: center;
   background-color: rgba(0, 0, 255, 0.8);
 }
 
 p {
   font-family: Oswald, sans-serif;
-  font-size: 1.125rem;
   }
 
 span {
@@ -14,30 +12,14 @@ span {
     background-color: rgba(0, 255, 0, 0.8);
   }
 
-img {
-height: 40rem;
-  width: 40rem;
-  margin: 2rem;
-}
-
-h2 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
-}
-
-h3 {
-  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
-}
-
 #mainTitle {
   color: rgba(255, 0, 30, 0.7);
   font-family: "Mozilla Headline", sans-serif;
-  grid-area: 1 / 1 / 3 / 10;
 }
 
 #mainPageTitle {
 color: rgba(255, 255, 0, 0.5);
 font-family: "Dancing Script", serif;
-font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
 #painel {
@@ -52,19 +34,13 @@ background-color: tomato;
 #result {
   color: white;
   background-color: blue;
-  margin: 2rem;
-  width: 60rem;
-  height: 5rem;
   font-family: Arimo, sans-serif;
-  font-size: 1.4rem;
   }
 
 #inputPainel {
-  margin: 2rem;
   display: grid;
-  grid-template: 1fr 1fr / 1fr;
-  width: 60rem;
-  gap: 2rem / 2rem;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 2rem 2rem;
   }
 
 #inputPainel input {
@@ -88,31 +64,22 @@ font-family: "Merriweather", sans-serif;
 #topicsContainer {
 background-color: rgba(0, 0, 0, 0.3); 
 display: grid;
-gap: 2rem;
+gap: 2rem 2rem;
 grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-width: 100rem;
 }
 
 #topicsContainer a {
 font-family: "Space Mono", sans-serif;
 color: rgba(255, 255, 255, 0.5);
 background-color: rgba(0, 0, 255, 0.1);
-width: 10rem;
-height: 10rem;
-font-size: 1.125rem;
-}
-
-#topicsContainer h3 {
-grid-row: 1 / 4;
 }
 
 #imgContainer {
 display: grid;
-grid-template: 1fr / 1fr;
+grid-template: 1fr / repeat(8, 1fr);
 }
 
 #imgContainer h3 {
-font-size: 1.5rem;
 color: rgba(255, 255, 0, 0.7);
 background-color: rgba(0, 0, 0, 0.2);
 }
