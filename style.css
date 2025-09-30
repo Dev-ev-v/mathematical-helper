@@ -105,12 +105,14 @@ footer {
 display: grid;
   grid-template: 1fr 1fr / 1fr 1fr; 
   max-width: 600px;
+  margin: 0 auto;
 }
 
 #painel {
 background-color: rgb(255, 200, 0);
 width: 80%;
   height: 15%;
+  margin: 0 auto;
 }
 
 #primosResult {
