@@ -110,6 +110,12 @@ display: grid;
 #painel {
 background-color: rgb(255, 200, 0);
 width: 80%;
+  height: 15%;
+}
+
+#primosResult {
+width: 80%;
+  height: auto;
 }
 
 #topicsContainer a {
