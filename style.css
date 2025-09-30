@@ -1,4 +1,4 @@
-/* ---------- RESET BÁSICO ---------- */
+/* Página principal */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,6 @@ body {
   padding: 1rem;
 }
 
-/* ---------- TIPOGRAFIA ---------- */
 h1, h2, h3, h4 {
   font-family: "Merriweather", serif;
   font-weight: 700;
@@ -41,7 +40,6 @@ span {
   font-weight: bold;
 }
 
-/* ---------- HEADER ---------- */
 header {
   margin: 2rem 0;
 }
@@ -52,7 +50,6 @@ header h3 {
   margin: 0 auto;
 }
 
-/* ---------- CONTEÚDO PRINCIPAL ---------- */
 #imgContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -82,7 +79,6 @@ header h3 {
   color: #555;
 }
 
-/* ---------- RODAPÉ ---------- */
 footer {
   margin-top: 3rem;
   padding: 2rem 0;
@@ -105,6 +101,17 @@ footer {
   margin: 0 auto;
 }
 
+#inputPainel {
+display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr; 
+  max-width: 600px;
+}
+
+#painel {
+background-color: rgb(255, 200, 0);
+width: 80%;
+}
+
 #topicsContainer a {
   display: block;
   padding: 0.75rem;
@@ -119,7 +126,6 @@ footer {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* ---------- COPYRIGHT ---------- */
 footer h3 {
   margin-top: 2rem;
   font-size: 0.9rem;
