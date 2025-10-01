@@ -1,5 +1,5 @@
 const painel = document.getElementById("painel");
-      const result = document.getElementById("result");
+      const result = document.getElementById("btnResult");
       const minNumber = document.getElementById("minNumber");
       const maxNumber = document.getElementById("maxNumber");
 
