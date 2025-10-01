@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-<link rel="stylesheet" href="style.css"> 
-    
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8">
+  <title>Localizador de números primos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
     <h1 id="mainTitle">Localizador de números primos</h1>
-    <p>Precisa procurar por números primos? Chegou ao lugar certo! Procure <span>quantos números quiser, usos ilimitados</span></p>
-    </header>
-    <main>
+    <p>Precisa procurar por números primos? Chegou ao lugar certo! Procure 
+      <span>quantos números quiser, usos ilimitados</span>
+    </p>
+  </header>
+
+  <main>
     <section>
-      <div id="painel"></div>
+      <div id="painel">
+        <p>O resultado aparecerá aqui...</p>
+      </div>
     
-    <div id="inputPainel">
-     <figure>
-      <input id="minNumber" type="number" placeholder="Mínimo">
-  <figcaption>MinNumber</figcaption>
-     </figure>
-      <figure>
-      <input id="maxNumber" type="number" placeholder="Máximo">
-      <figcaption>MaxNumber</figcaption>
-      </figure>
-    </div>
+      <div id="inputPainel">
+        <figure>
+          <input id="minNumber" type="number" placeholder="Mínimo">
+          <figcaption>Número mínimo</figcaption>
+        </figure>
+        <figure>
+          <input id="maxNumber" type="number" placeholder="Máximo">
+          <figcaption>Número máximo</figcaption>
+        </figure>
+      </div>
     </section>
-    <button id="primosResult">Result</button>
-    </main>
-    <footer>
-      <nav>
-        <a href="https://dev-ev-v.github.io/mathematical-helper/index.html">Página inicial</a>
+
+    <button id="btnResult">Procurar primos</button>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="https://dev-ev-v.github.io/mathematical-helper/index.html">Página inicial</a>
       <a href="https://dev-ev-v.github.io/mathematical-helper/porcentagem.html">Porcentagem</a>
-      </nav>
-    </footer>
-    <script src="primos.js"></script>
-  </body>
+    </nav>
+  </footer>
+
+  <script src="primos.js"></script>
+</body>
 </html>
