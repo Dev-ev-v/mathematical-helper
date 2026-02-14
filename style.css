@@ -136,6 +136,43 @@ footer {
   transition: background 0.3s ease;
 }
 
+#visor {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 80px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center; /* Texto no meio vertical */
+  justify-content: flex-end; /* Texto alinhado à direita */
+  padding: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px); /* 4 colunas fixas */
+  grid-gap: 10px; /* Espaço entre botões */
+}
+
+.button {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 #btnResult:hover {
   background: #555;
 }
